@@ -1,0 +1,9 @@
+version: "3.9"  # optional since v1.27.0
+services:
+  api-ebilling:
+    image: php:8-apache
+    ports:
+      - "5000:5000"
+    volumes:
+      - .:/var/www/html
+      - ./logs:/var/log
